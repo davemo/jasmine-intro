@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>A Simple Ajax Example</title>
+  <script type="text/javascript" src="lib/jquery.js"></script>
+  <script type="text/javascript" src="lib/underscore.js"></script>
+  <script type="text/javascript" src="src/bootstrap.js"></script>
+  <script type="text/javascript" src="src/articles.js"></script>
+</head>
+<body>
+  
+  <a href="#" id="load-google">Load Google Results</a>
+  <a href="#" id="load-apple">Load Apple Results</a>
+  
+  <ul class="articles"></ul>
+  
+  <script type="text/javascript">
+    $("#load-google, #load-apple").click(APP.Articles.handleLoadArticleClick);
+  </script>
+  
+</body>
+</html>
